@@ -1,5 +1,14 @@
 package ECommerceBackend.dataAccess.abstracts;
 
-public interface UserDao {
+import java.util.List;
 
+import ECommerceBackend.entities.concretes.User;
+
+public interface UserDao {
+	void add(User user);
+	void delete(User user);
+	void update(User user);
+	User get(int id);
+	List<User> getAll();
+	User getById(int id);
 }

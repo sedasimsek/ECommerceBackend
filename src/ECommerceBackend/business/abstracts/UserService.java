@@ -1,5 +1,11 @@
 package ECommerceBackend.business.abstracts;
 
-public interface UserService {
+import java.util.List;
 
+import ECommerceBackend.entities.concretes.User;
+
+
+public interface UserService {
+	void add(User user);
+	List<User> getAll();
 }
