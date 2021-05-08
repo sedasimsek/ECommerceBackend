@@ -1,0 +1,8 @@
+package ECommerceBackend.business.abstracts;
+
+import ECommerceBackend.entities.concretes.User;
+
+public interface AuthService {
+	void register(User user);
+	void login(User user);
+}

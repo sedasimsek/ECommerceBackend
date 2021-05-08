@@ -6,6 +6,10 @@ import ECommerceBackend.entities.concretes.User;
 
 
 public interface UserService {
-	void add(User user);
+	boolean add(User user);
+	boolean delete(User user);
+	boolean update(User user);
+	User getById(int id);
 	List<User> getAll();
+	User getByEmail(String email);
 }
